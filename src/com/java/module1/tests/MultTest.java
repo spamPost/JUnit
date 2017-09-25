@@ -1,9 +1,12 @@
 package com.java.module1.tests;
 
 import com.epam.tat.module4.Calculator;
+import com.java.module1.categories.MultDivTestsCategories;
 import org.junit.Assert;
 import org.junit.Test;
+import org.junit.experimental.categories.Category;
 
+@Category(MultDivTestsCategories.class)
 public class MultTest extends Assert{
 
     Calculator calc = new Calculator();

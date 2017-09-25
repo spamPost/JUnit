@@ -1,9 +1,12 @@
 package com.java.module1.tests;
 
 import com.epam.tat.module4.Calculator;
+import com.java.module1.categories.AddSubTestsCategories;
 import org.junit.Assert;
 import org.junit.Test;
+import org.junit.experimental.categories.Category;
 
+@Category(AddSubTestsCategories.class)
 public class SubTest extends Assert {
     Calculator calc = new Calculator();
 
