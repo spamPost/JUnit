@@ -22,4 +22,10 @@ public class MultTest extends Assert{
         long result = calc.mult(100, 0);
         assertEquals(0, result);
     }
+
+    @Test
+    public void multByItself() {
+        double result = calc.mult(4.84, 3.05);
+        assertTrue("result: " + result, 14.762 == result);
+    }
 }

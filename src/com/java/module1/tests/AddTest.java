@@ -21,4 +21,10 @@ public class AddTest extends Assert {
         long result = calc.sum(5, 5);
         assertEquals(10, result);
     }
+
+    @Test
+    public void addZero() {
+        long result = calc.sum(2, 0);
+        assertEquals(2, result);
+    }
 }

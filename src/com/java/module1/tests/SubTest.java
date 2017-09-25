@@ -21,4 +21,16 @@ public class SubTest extends Assert {
         long result = calc.sub(4, 4);
         assertEquals(0, result);
     }
+
+    @Test
+    public void subLargestValue() {
+        long result = calc.sub(3, 8);
+        assertEquals(-5, result);
+    }
+
+    @Test
+    public void subZero() {
+        long result = calc.sub(9, 0);
+        assertEquals(9, result);
+    }
 }

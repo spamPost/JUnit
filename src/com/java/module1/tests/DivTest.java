@@ -23,7 +23,12 @@ public class DivTest extends Assert{
     }
 
     @Test(expected = ArithmeticException.class)
-    public void divByZero() {
+    public void divByZeroLong() {
         calc.div(10, 0);
+    }
+
+    @Test(expected = ArithmeticException.class)
+    public void divByZeroDouble() {
+        calc.div(2.4, 0);
     }
 }
