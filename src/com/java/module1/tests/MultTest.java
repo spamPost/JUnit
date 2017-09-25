@@ -26,6 +26,6 @@ public class MultTest extends Assert{
     @Test
     public void multByItself() {
         double result = calc.mult(4.84, 3.05);
-        assertTrue("result: " + result, 14.762 == result);
+        assertTrue(14.762 == result);
     }
 }

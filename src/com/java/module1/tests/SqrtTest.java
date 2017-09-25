@@ -42,6 +42,6 @@ public class SqrtTest extends Assert {
     @Test
     public void sqrtTest() {
         double result = new Calculator().sqrt(value);
-        assertEquals("", expectedResult, result, 0);
+        assertEquals(expectedResult, result, 0);
     }
 }
