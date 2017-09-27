@@ -1,7 +1,6 @@
 package com.java.module1.tests;
 
-import com.epam.tat.module4.Calculator;
-import org.junit.Assert;
+import com.java.module1.BaseCalculatorTest;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.junit.runners.Parameterized;
@@ -11,8 +10,10 @@ import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 
+import static org.junit.Assert.assertEquals;
+
 @RunWith(Parameterized.class)
-public class SqrtTest extends Assert {
+public class SqrtTest extends BaseCalculatorTest {
 
     private double value;
     private double expectedResult;
@@ -41,7 +42,7 @@ public class SqrtTest extends Assert {
 
     @Test
     public void sqrtTest() {
-        double result = new Calculator().sqrt(value);
+        double result = calc.sqrt(value);
         assertEquals(expectedResult, result, 0);
     }
 }

@@ -1,14 +1,15 @@
 package com.java.module1.tests;
 
-import com.epam.tat.module4.Calculator;
+import com.java.module1.BaseCalculatorTest;
 import com.java.module1.categories.MultDivTestsCategories;
-import org.junit.Assert;
 import org.junit.Test;
 import org.junit.experimental.categories.Category;
 
+import static org.junit.Assert.assertEquals;
+import static org.junit.Assert.assertTrue;
+
 @Category(MultDivTestsCategories.class)
-public class DivTest extends Assert{
-    Calculator calc = new Calculator();
+public class DivTest extends BaseCalculatorTest{
 
     @Test
     public void divByItself() {
@@ -23,12 +24,12 @@ public class DivTest extends Assert{
     }
 
     @Test(expected = ArithmeticException.class)
-    public void divByZeroLong() {
+    public void divLongByZero() {
         calc.div(10, 0);
     }
 
     @Test(expected = ArithmeticException.class)
-    public void divByZeroDouble() {
+    public void divDoubleByZero() {
         calc.div(2.4, 0);
     }
 }

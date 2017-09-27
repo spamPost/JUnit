@@ -1,14 +1,15 @@
 package com.java.module1.tests;
 
-import com.epam.tat.module4.Calculator;
+import com.java.module1.BaseCalculatorTest;
 import com.java.module1.categories.AddSubTestsCategories;
-import org.junit.Assert;
 import org.junit.Test;
 import org.junit.experimental.categories.Category;
 
+import static org.junit.Assert.assertEquals;
+import static org.junit.Assert.assertTrue;
+
 @Category(AddSubTestsCategories.class)
-public class AddTest extends Assert {
-    Calculator calc = new Calculator();
+public class AddTest extends BaseCalculatorTest {
 
     @Test
     public void addOne() {
